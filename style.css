@@ -147,7 +147,7 @@ html {
 }
 
 .bgDuckNeckBlue {
-  background-color: #8fd1dd;
+  background-color: #8fddd4;
 }
 
 .bgPinkChalk {
@@ -159,7 +159,7 @@ html {
 }
 
 .bgPurple {
-  background-color: #022481;
+  background-color: #2ac0e9;
 }
 
 .bgYellow {
@@ -175,7 +175,7 @@ html {
 }
 
 .bgHeavenlyBlue {
-  background-color: #ebd7bf;
+  background-color: #522789;
 }
 
 .bgPurpleHue {
@@ -183,7 +183,7 @@ html {
 }
 
 .bgGrey {
-  background-color: #0f2d5e;
+  background-color: #06558d;
 }
 
 .bgStrawberryPink {
@@ -227,7 +227,7 @@ html {
 }
 
 .board-color__title_bgDuckNeckBlue {
-    color: #8fd1dd;
+    color: #8fddd4;
     font-size: 2.5rem;
     text-align: center;
     margin-top: 20px;
@@ -251,7 +251,7 @@ html {
 }
 
 .board-color__title_bgPurple {
-    color: #022481;
+    color: #2ac0e9;
         font-size: 2.5rem;
     text-align: center;
     margin-top: 20px;
@@ -283,7 +283,7 @@ html {
 }
 
 .board-color__title_bgHeavenlyBlue {
-    color: #ebd7bf;
+    color: #522789;
         font-size: 2.5rem;
     text-align: center;
     margin-top: 20px;
@@ -299,7 +299,7 @@ html {
 }
 
 .board-color__title_bgGrey {
-    color: #0f2d5e;
+    color: #06558d;
         font-size: 2.5rem;
     text-align: center;
     margin-top: 20px;
