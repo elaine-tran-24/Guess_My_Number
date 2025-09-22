@@ -33,7 +33,7 @@ html {
   right: 10px;
   padding: 10px 20px;
   background-color: #0c376880;
-  color: #ffe0ac;
+  color: #fffbf4;
   border: none;
   border-radius: 5px;
   font-size: 16px;
@@ -61,14 +61,14 @@ html {
 }
 
 .game__low-number,
-.game__hight-number {
+.game__high-number {
   background-color: transparent;
   border-radius: 24px;
   min-width: 28%;
   min-height: 150px;
   border: transparent;
   font-size: 10rem;
-  color: #ffe0ac;
+  color: #fffbf4;
   background-color: #0c376880;
 }
 
@@ -80,7 +80,7 @@ html {
   min-height: 150px;
   border: transparent;
   font-size: 10rem;
-  color: #ffe0ac;
+  color: #fffbf4;
   text-align: center;
 }
 
@@ -93,7 +93,7 @@ html {
   min-height: 120px;
   border: transparent;
   font-size: 9rem;
-  color: #ffe0ac;
+  color: #fffbf4;
   text-align: center;
   margin-top: 80px;
   cursor: pointer;
@@ -114,7 +114,7 @@ html {
   height: 80%;
   top: 10%;
   left: 5%;
-  background-color: #fdfbfa;
+  background-color: #ffffff;
   border-radius: 100px;
   display: flex;
   flex-direction: column;
@@ -135,18 +135,11 @@ html {
   border-radius: 50%;
 }
 
-/* .board-color__title {
-  font-size: 2rem;
-  text-align: center;
-  margin-top: 40px;
-  color: brown;
-  max-width: 200px;
-} */
+
 .board-color__title {
     font-size: 2.5rem;
     text-align: center;
     margin-top: 20px;
-    color: #684921;
     max-width: 200px;
 }
 .bgOrange {
@@ -208,4 +201,115 @@ html {
 .board-color__container.show {
   display: flex;
   opacity: 1;
+}
+
+.feedback-message {
+  background: rgba(10, 40, 120, 0.5);
+  color: red;
+  border-radius: 20px;
+  padding: 24px 48px;
+  font-size: 4rem;
+  text-align: center;
+  font-weight: bold;
+  margin: 60px auto 0 auto;
+  width: fit-content;
+  transition: opacity 1s;
+  z-index: 2000;
+  position: relative;
+}
+
+.board-color__title_bgOrange {
+    color: #f9ed5f;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 20px;
+    max-width: 200px;
+}
+
+.board-color__title_bgDuckNeckBlue {
+    color: #8fd1dd;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 20px;
+    max-width: 200px;
+}
+
+.board-color__title_bgPinkChalk {
+    color: #f4cde2;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 20px;
+    max-width: 200px;
+}
+
+.board-color__title_bgBananaGreen {
+    color: #8f1c17;
+        font-size: 2.5rem;
+    text-align: center;
+    margin-top: 20px;
+    max-width: 200px;
+}
+
+.board-color__title_bgPurple {
+    color: #022481;
+        font-size: 2.5rem;
+    text-align: center;
+    margin-top: 20px;
+    max-width: 200px;
+}
+
+.board-color__title_bgYellow {
+    color: #62a557;
+        font-size: 2.5rem;
+    text-align: center;
+    margin-top: 20px;
+    max-width: 200px;
+}
+
+.board-color__title_bgRed {
+    color: #aea1d9;
+        font-size: 2.5rem;
+    text-align: center;
+    margin-top: 20px;
+    max-width: 200px;
+}
+
+.board-color__title_bgCobaltGreen {
+    color: #b6b6b4;
+        font-size: 2.5rem;
+    text-align: center;
+    margin-top: 20px;
+    max-width: 200px;
+}
+
+.board-color__title_bgHeavenlyBlue {
+    color: #ebd7bf;
+        font-size: 2.5rem;
+    text-align: center;
+    margin-top: 20px;
+    max-width: 200px;
+}
+
+.board-color__title_bgPurpleHue {
+    color: #db693f;
+        font-size: 2.5rem;
+    text-align: center;
+    margin-top: 20px;
+    max-width: 200px;
+}
+
+.board-color__title_bgGrey {
+    color: #0f2d5e;
+        font-size: 2.5rem;
+    text-align: center;
+    margin-top: 20px;
+    max-width: 200px;
+}
+
+.board-color__title_bgStrawberryPink {
+    color: #c2e57d;
+        font-size: 2.5rem;
+    text-align: center;
+    margin-top: 20px;
+    max-width: 200px;
 }

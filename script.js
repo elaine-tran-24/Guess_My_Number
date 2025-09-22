@@ -5,7 +5,7 @@ let lowerBound = 0;
 let upperBound = 1000;
 console.log(secretNumber);
 const lowNumber = $('.game__low-number');
-const highNumber = $('.game__hight-number');
+const highNumber = $('.game__high-number');
 const guessNumber = $('.game__cur-number');
 const checkBtn = $('.game__check');
 const againBTn = $('.game__again');
@@ -17,6 +17,10 @@ lowNumber.innerText = lowerBound;
 highNumber.innerText = upperBound;
 const checkNumber = function () {
   const guess = Number(guessNumber.value);
+  if (Number.isNaN(guess)) { 
+    displayFeedback("Vui lòng nhập số hợp lệ!", "red");
+    guessNumber.value = '';
+  }else{
   if (guess === secretNumber) {
     checkBtn.classList.add('none');
     againBTn.classList.remove('none');
@@ -34,31 +38,28 @@ const checkNumber = function () {
     highNumber.classList.add('animate__fadeInTopRight');
     displayFeedback("Liu liu sai rồi :(", "red");
   }
+}
 };
 function displayFeedback(message, color) {
   if (!feedbackMessage.parentNode) {
     feedbackMessage = document.createElement('div'); 
   }
-
+  feedbackMessage.className = 'feedback-message';
   feedbackMessage.textContent = message;
-  feedbackMessage.style.color = color;
-  feedbackMessage.style.fontSize = '4rem'; 
-  feedbackMessage.style.textAlign = 'center';
-  feedbackMessage.style.marginTop = '60px'; 
-  feedbackMessage.style.fontWeight = 'bold';
-  feedbackMessage.style.transition = 'opacity 1s'; 
+  // màu chữ sẽ lấy theo class, nếu muốn override thì dùng style.color = color
+  if (color) feedbackMessage.style.color = color;
   if (!document.body.contains(feedbackMessage)) {
     document.body.appendChild(feedbackMessage);
   }
+  feedbackMessage.style.opacity = '1';
   setTimeout(() => {
     feedbackMessage.style.opacity = '0'; 
   }, 5000);
-
   setTimeout(() => {
     if (document.body.contains(feedbackMessage)) {
       feedbackMessage.remove();
     }
-  }, 6000); 
+  }, 2000); 
 }
 
 checkBtn.onclick = () => {
@@ -88,8 +89,9 @@ againBTn.onclick = () => {
 };
 listColorItems.forEach(item => {
   item.onclick = e => {
-    e.target.parentNode.style.textDecoration = 'line-through';
-    e.target.parentNode.classList.add('opacity');
+    const currentItem = e.currentTarget;
+    currentItem.style.textDecoration = 'line-through';
+    currentItem.classList.add('opacity');
     boardColor.classList.remove('show');
     containerBoardColor.classList.remove('show');
   };
